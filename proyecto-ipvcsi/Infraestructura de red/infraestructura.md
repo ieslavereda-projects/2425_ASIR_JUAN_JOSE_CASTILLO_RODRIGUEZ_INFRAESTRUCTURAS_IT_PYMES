@@ -25,8 +25,8 @@ La red simula dos sedes conectadas mediante una VPN site-to-site:
 | srv-ad                  | `10.20.10.11`  | Controlador de dominio principal | Castellón   |
 | srv-docker              | `10.20.10.12`  | Servicios en Docker              | Castellón   |
 | pfSense-Madrid (LAN)    | `10.30.10.1`   | Firewall, cliente VPN            | Madrid      |
-| srv-ad2                 | `10.30.10.21`  | Controlador de dominio secundario| Madrid      |
-| srv-docker2             | `10.30.10.22`  | Replica de servicios Docker      | Madrid      |
+| srv-ad2                 | `10.30.10.11`  | Controlador de dominio secundario| Madrid      |
+| srv-docker2             | `10.30.10.12`  | Replica de servicios Docker      | Madrid      |
 
 **VPN túnel (WireGuard):**
 
