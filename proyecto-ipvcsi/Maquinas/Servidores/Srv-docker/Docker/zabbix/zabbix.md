@@ -31,18 +31,20 @@ Instalar Zabbix en el propio sistema (sin Docker) para monitorizar servidores y 
 3. Crear base de datos:
 
    CREATE DATABASE zabbix CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+   
    CREATE USER zabbix@localhost IDENTIFIED BY 'clave_segura';
+   
    GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@localhost;
 
-4. Importar el esquema y datos iniciales:
+5. Importar el esquema y datos iniciales:
 
    zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql -uzabbix -p zabbix
 
-5. Configurar /etc/zabbix/zabbix_server.conf:
+6. Configurar /etc/zabbix/zabbix_server.conf:
 
    DBPassword=clave_segura
 
-6. Iniciar servicios:
+7. Iniciar servicios:
 
    systemctl enable zabbix-server zabbix-agent apache2
    systemctl start zabbix-server zabbix-agent apache2
