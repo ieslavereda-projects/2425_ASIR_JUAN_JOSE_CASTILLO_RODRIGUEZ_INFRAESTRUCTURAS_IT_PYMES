@@ -57,6 +57,6 @@ En ambos pfSense:
 
 - `Status > WireGuard` muestra handshake activo
 - Ping entre:
-  - `10.20.10.11` (srv-ad) y `10.30.10.22` (srv-docker2) → OK
+  - `10.20.10.11` (srv-ad) y `10.30.10.12` (srv-docker2) → OK
   - `10.20.10.1` ↔ `10.30.10.1` → OK
 
