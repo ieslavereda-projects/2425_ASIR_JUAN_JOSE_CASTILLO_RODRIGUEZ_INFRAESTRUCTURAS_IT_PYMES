@@ -10,12 +10,13 @@ Instalar Plex Media Server directamente sobre Ubuntu Server 22.04 para ofrecer u
 
 ## Pasos de instalación
 
-### 1. Instalar transporte seguro para APT
+
+
+### 1 - Inatalar transporte seguro para APT
 ```bash
 sudo apt install apt-transport-https
 
-
-### 2 -Añadir la clave GPG del repositorio de paquetes de Plex:
+### 2 - Añadir la clave GPG del repositorio de paquetes de Plex:
 ```bash
 curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add - 
 
