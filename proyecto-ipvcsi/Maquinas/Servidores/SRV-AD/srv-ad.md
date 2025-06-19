@@ -15,7 +15,7 @@
 - **Nombre del dominio:** `ipvcsi.local`
 - **Estructura de Unidades Organizativas (OUs):**
 
-![Estructura ou](./estructura ou.png)
+![Estructura ou](./estructura-ou.png)
 
 ---
 
