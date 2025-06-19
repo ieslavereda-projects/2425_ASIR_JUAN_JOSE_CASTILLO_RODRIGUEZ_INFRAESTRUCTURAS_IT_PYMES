@@ -43,8 +43,8 @@ Se ha creado una red con dos sedes (Castellón y Madrid) conectadas por VPN para
 |---------------|-------------------------------------------|---------------|
 | `srv-ad`      | Controlador de dominio principal          | 10.20.10.11   |
 | `srv-ad2`     | Controlador de dominio secundario         | 10.20.10.21   |
-| `srv-docker`  | Servidor principal con contenedores       | 10.20.10.12   |
-| `srv-docker2` | Réplica del servidor docker (Madrid)      | 10.20.10.22   |
+| `srv-docker`  | Servidor principal con contenedores       | 10.30.10.11   |
+| `srv-docker2` | Réplica del servidor docker (Madrid)      | 10.30.10.12   |
 
 ## Seguridad implementada
 
