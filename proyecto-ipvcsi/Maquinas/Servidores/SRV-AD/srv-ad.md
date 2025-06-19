@@ -15,22 +15,7 @@
 - **Nombre del dominio:** `ipvcsi.local`
 - **Estructura de Unidades Organizativas (OUs):**
 
-ipvcsi.local
-├── Domain Controller
-│ ├── srv-ad
-│ └── srv-ad2
-├── Equipos
-├── Usuarios
-└── Sedes
-     ├── Castellón
-     │        ├── Equipos
-     │        └── Usuarios
-     │                └── Departamentos
-     │                           ├── Administración
-     │                           ├── Marketing
-     │                           ├── Soporte IT
-     │                           └── Dirección
-     └── Madrid
+![Estructura ou](./estructura ou.png)
 
 ---
 
