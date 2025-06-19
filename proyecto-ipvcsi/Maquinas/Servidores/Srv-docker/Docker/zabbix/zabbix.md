@@ -25,11 +25,11 @@ Instalar Zabbix en el propio sistema (sin Docker) para monitorizar servidores y 
    apt update
 
 2. Instalar paquetes:
-
+   ```bash
    apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent mariadb-server
 
 3. Crear base de datos:
-
+   ```bash
    CREATE DATABASE zabbix CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
    
    CREATE USER zabbix@localhost IDENTIFIED BY 'clave_segura';
@@ -37,7 +37,7 @@ Instalar Zabbix en el propio sistema (sin Docker) para monitorizar servidores y 
    GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@localhost;
 
 5. Importar el esquema y datos iniciales:
-
+   ```bash
    zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql -uzabbix -p zabbix
 
 6. Configurar /etc/zabbix/zabbix_server.conf:
@@ -45,7 +45,7 @@ Instalar Zabbix en el propio sistema (sin Docker) para monitorizar servidores y 
    DBPassword=clave_segura
 
 7. Iniciar servicios:
-
+   ```bash
    systemctl enable zabbix-server zabbix-agent apache2
    systemctl start zabbix-server zabbix-agent apache2
 
